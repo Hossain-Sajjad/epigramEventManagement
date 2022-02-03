@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epigram Event Management</title>
+    <!-- biitstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ec8365f57c.js" crossorigin="anonymous"></script>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="#">Epigram Event Management</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bolder" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bolder" href="#packages">Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bolder" href="#about-us">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bolder" href="#contract-us">Contract Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- top carousel section -->
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="">
+                            <img src="images/banner.png" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-caption d-block d-lg-block mb-5">
+                            <h1>Let's Your Dream Happened</h1>
+                            <p>We are here, your most belived partner to fulfill your dream!</p>
+                            <a class="btn own-button-style" href="https://www.facebook.com/epigram.org"
+                                target="_blank">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner-3.jpg" class="d-block" alt="..">
+                        <div class="carousel-caption d-block d-lg-block" style="margin-bottom: 150px;">
+                            <h1 style="color: black;">You Want To Live Your Dream, Let's Do it.</h1>
+                            <p style="color: black;">Event marketing agency with 5+ years of expertise in brand
+                                experience. Event Marketing Leader. Offices Across the Globe. Brand Experience Leader.
+                            </p>
+                            <a class="btn own-button-style" href="https://www.facebook.com/epigram.org"
+                                target="_blank">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner-2.jpg" class="d-block" alt="...">
+                        <div class="carousel-caption d-block d-lg-block mb-5">
+                            <h1>Your Dream Our Passion Togethar We Win</h1>
+                            <p>Epigram is BD's most reputed wedding management company. We are definitely the trend
+                                setters in the wedding industry.</p>
+                            <a class="btn own-button-style" href="https://www.facebook.com/epigram.org"
+                                target="_blank">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+    </header>
+    <main>
+        <!-- toast massage -->
+        <div class="alert alert-style alert-dismissible fade show" role="alert">
+            <strong>Hei Dear! </strong> 20% off on your first purchage...!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- packages section -->
+        <section id="packages" class="container mt-5">
+            <h1 class="text-center">Our packages</h1>
+            <div class="row mt-5 gy-5">
+                <div class="col-lg-3">
+                    <div class="p-2 mt-3">
+                        <h2 class="fw-bold">$100</h2>
+                        <h3 class="fw-bold py-1">Photography</h3>
+                        <p class="text-muted mb-1">For most businesses, cultarul and weeding event</p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">limited photograph</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">limited space access</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">1 profesional photographer</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">limited time</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">no printed copy</span></p>
+                        <a class="btn own-button-style d-grid rounded-pill mt-3"
+                            href="https://www.facebook.com/epigram.org" target="_blank">Choose plan</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="p-2 mt-3">
+                        <h2 class="fw-bold">$300</h2>
+                        <h3 class="fw-bold py-1">Business Event</h3>
+                        <p class="text-muted mb-1">For most businesses, cultarul and weeding event</p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">limited photograph</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">limited space access</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">3 profesional photographer</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">limited time</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">100 printed copy</span></p>
+                        <a class="btn own-button-style d-grid rounded-pill mt-3"
+                            href="https://www.facebook.com/epigram.org" target="_blank">Choose plan</a>
+                    </div>
+                </div>
+                <div id="highlighted-package" class="col-lg-3 shadow-lg">
+                    <div class="p-2">
+                        <h2 class="fw-bold">$500</h2>
+                        <h3 class="fw-bold py-1">Best Deal</h3>
+                        <p class="mb-1">For most businesses, cultarul and weeding even</p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1">cinematography included</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1">unlimited space access</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1">unlimited time</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1">5 photographers</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1">unlimited printed copy</span></p>
+                        <a class="btn d-grid rounded-pill mt-3" href="https://www.facebook.com/epigram.org"
+                            target="_blank">Choose plan</a>
+                        <span id="top">Top</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="p-2 mt-3">
+                        <h2 class="fw-bold">$400</h2>
+                        <h3 class="fw-bold py-1">Weeding Event</h3>
+                        <p class="text-muted mb-1">For most businesses, cultarul and weeding even</p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">cinematography included</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">unlimited space access</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">unlimited time</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">5 photographers</span></p>
+                        <p class="mb-1"><svg xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg><span class="ps-1 text-muted">100 printed copy</span></p>
+                        <a class="btn own-button-style d-grid rounded-pill mt-3"
+                            href="https://www.facebook.com/epigram.org" target="_blank">Choose plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- question section -->
+        <section id="about-us" class="container mt-5 pt-5">
+            <h1 class="text-center mb-5 pb-5">Frequently Asked Questions</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Event Management Careers Guide
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Event Management can be a lucrative career. The National
+                                        Careers Service advises that average starting salaries are between
+                                        £17,000-£21,000, rising to between £25,000-£40,000 with experience*. Salaries
+                                        can even exceed £80,000 when you're at the top of your game. </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Events manager | Explore careers | National Careers Service
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">nationalcareers.service.gov.bd
+                                        Level 3 Certificate in the Principles of Event Management. Level 3 Diploma in
+                                        Live Events and Promotion. Some courses in travel and tourism may include an
+                                        events planning option. </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        BA (Hons) Event Management
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">On this event management course you will learn about
+                                        every aspect of the business, from planning through to marketing and staging.
+                                        Study in the BD's top events destination and take advantage of work placement
+                                        opportunities.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        International event location - Planning your next event?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Try our video tool, and create a personalised promo of
+                                        your next event - free of charge! We invite you to host your next event in
+                                        Copenhagen - let us assist you plan it! Showcase your event. Create free event
+                                        video. Get in touch.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <img class="w-100" src="images/people.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contract section  -->
+        <section id="contract-us" class="my-5">
+            <div class="container own-contract-info d-flex justify-content-center align-items-center rounded-3"
+                style="height: 300px;" id="subscribe">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h1>Massage us Directly!</h1>
+                    <p>Say, What you think...</p>
+                    <input class="form-control" type="text" placeholder="Massage">
+                    <br>
+                    <input class="form-control" type="text" placeholder="Email">
+                    <br>
+                    <button class="own-button-style shadow-lg">Submit</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer  -->
+    <footer id="footer-style" class="mt-5 p-5">
+        <div class="container d-lg-flex flex-row-reverse justify-content-between align-items-center">
+            <div>
+                <h5 class="p-2">Get the App</h5>
+                <div class="m-2">
+                    <a class="btn btn-dark rounded d-flex pb-0" href="https://www.apple.com/" target="_blank">
+                        <span class="pe-2" style="font-size: 1.5rem;">
+                            <i class="fab fa-apple" style="color: white;"></i>
+                        </span>
+                        <div class="">
+                            <p class="lh-1"><span style="font-size: .7rem;">Download on the</span><br><span>App
+                                    Store</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="m-2">
+                    <a class="btn btn-dark rounded d-flex pb-0"
+                        href="https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon"
+                        target="_blank">
+                        <span class="pe-2" style="font-size: 1.5rem;">
+                            <i class="fab fa-google-play"></i>
+                        </span>
+                        <div class="">
+                            <p class="lh-1"><span style="font-size: .7rem;">Download on the</span><br><span>App
+                                    Store</span></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <span>© 2022 Hossain Sajjad, All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap js script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
